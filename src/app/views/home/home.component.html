@@ -1,0 +1,237 @@
+<app-navbar></app-navbar>
+<app-banner></app-banner>
+<app-carousel [carouselData]="{
+        id: 'news',
+        images: (data == null) ? [] : data.carousel.images,
+        width: '100%',
+        height: '640px',
+        slideInterval: 3000
+    }"
+/>
+
+<app-float-button-top></app-float-button-top>
+
+<section id="studio" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <h1>Conheça nosso Studio</h1>
+
+    <hr class="featurette-divider">
+
+    <p>
+        {{ data?.studio?.description }}
+    </p>
+
+    <p>
+        <button type="button" class="btn theme-btn" [routerLink]="['/studio']">
+            Mais Detalhes »
+        </button>
+    </p>
+
+</section>
+
+<section id="procedures" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <h1 class="featurette-heading">Nossos Procedimentos</h1>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette mb-4" *ngFor="let procedure of data?.procedures; let procedureIndex = index">
+        <div class="col-md-7">
+
+            <h4 class="featurette-heading">{{procedure.name}}</h4>
+
+            <p>
+                {{procedure.description}}
+            </p>
+
+            <p>
+                <button type="button" class="btn theme-btn" [routerLink]="['/procedimentos/', procedure.slug]">
+                    Mais Detalhes »
+                </button>
+            </p>
+        </div>
+
+        <div class="col-md-5">
+            <app-carousel class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="500" [carouselData]="{
+                    id: 'procedure_'.concat(procedureIndex.toString()),
+                    images: procedure.images,
+                    width: '100%',
+                    height: '360px',
+                    slideInterval: 3000
+                }" />
+
+        </div>
+
+        <hr class="featurette-divider mt-4">
+    </div>
+
+    <div class="row mt-4">
+        <button type="button" class="btn theme-btn" [routerLink]="['/procedimentos']">
+            <div class="slide">Veja todos os procedimentos »</div>
+        </button>
+    </div>
+
+</section>
+
+<section id="professionals" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <h1>Nossos Profissionais</h1>
+
+    <hr class="featurette-divider">
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4" *ngFor="let professional of data?.professionals">
+                <img src="{{professional.image.url}}" alt="{{professional.image.alt}}"
+                    class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+                <h3>{{professional.name}}</h3>
+
+                <p>
+                    {{professional.description}}
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="products" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <h1>Produtos</h1>
+
+    <hr class="featurette-divider">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col" *ngFor="let product of data?.products; let productIndex = index">
+            <div class="card h-100">
+
+                <app-carousel [carouselData]="{
+                        id: 'product_'.concat(productIndex.toString()),
+                        images: product.images,
+                        width: '100%',
+                        height: '360px',
+                        slideInterval: 3000
+                    }" />
+
+                <div class="card-body">
+                    <div class="container">
+
+                        <div class="row card-title theme-color">
+                            <h3>{{product.name}}</h3>
+                        </div>
+
+                        <div class="row card-text theme-color">
+                            <div class="col">
+                                <strong>Tamanhos: </strong>{{product.sizes.join(', ')}}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+        <button type="button" class="btn theme-btn" [routerLink]="['/produtos']">
+            <div class="slide">Veja todos os produtos »</div>
+        </button>
+    </div>
+
+</section>
+
+<section id="recommendations" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="container">
+        <article class="article-recommendations theme-color">
+
+            <h1 class="text-center section-title">Studio Luana Lima é sucesso</h1>
+
+            <hr class="featurette-divider">
+
+            <p class="text-center padding-mb"><strong>Qualidade sem comparação.</strong></p>
+
+            <div class="row bg--light ell-values">
+                <div class="col-md-4 text-center">
+                    <p class="ell-num">Mais de<br><strong>500</strong><br> procedimentos realizados
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="ell-num">Cerca de<br><strong>200</strong><br> clientes cadastrados
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="ell-num">Mais de<br> <strong>3</strong> <br> profissionais parceiros
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-recommendations theme-color">
+
+            <div class="row justify-content-center bg--light">
+                <h2 class="text-center section-title col-md-12">Quem conhece, recomenda.</h2>
+
+                <div class="col-md-5 col-10 text-center box-customer"
+                    *ngFor="let recomendation of data?.recomendations">
+                    <img src="{{recomendation.image.url}}" alt="{{recomendation.image.alt}}" class="img-responsive">
+
+                    <p class="customer-comment">
+                        “{{recomendation.message}}”
+                    </p>
+
+                    <p class="customer-name">{{recomendation.customer}}</p>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section id="contacts" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <h1>Contatos e Redes Sociais</h1>
+
+    <hr class="featurette-divider">
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4 icon" *ngFor="let contact of data?.contacts">
+                <a [href]="contact?.redirect_to" target="_blank">
+                    <img [src]="contact?.image?.url" [alt]="contact?.image?.alt"
+                        class="bd-placeholder-img rounded-circle" width="70" height="70">
+
+                    <h3>{{contact?.value}}</h3>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="location" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <h1>Localização</h1>
+
+    <hr class="featurette-divider">
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+                <img alt="" class="bd-placeholder-img rounded-circle">
+                <h4>Rua Amor Perfeito, 104</h4>
+                <h4>JD Flôr de Maio - ZN</h4>
+                <h4>São Paulo - SP</h4>
+                <h4>CEP: 02362-060</h4>
+            </div>
+
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.763756486192!2d-46.57548952481778!3d-23.432899656885027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4406a906f35%3A0x71e4542726fc7857!2sR.%20Amor%20Perfeito%2C%20104%20-%20Jardim%20Flor%20de%20Maio%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002363-165!5e0!3m2!1spt-BR!2sbr!4v1695216090034!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>

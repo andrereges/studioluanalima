@@ -1,0 +1,33 @@
+img {
+    content: url("/assets/images/site/logo.jpeg");
+}
+
+.header-logo img {
+    width: 5%;
+    margin: 0;
+    padding: 10px 10px;
+    border-radius: 23px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+#facade-name {
+    margin-left: auto;
+    padding: 10px;
+    background: linear-gradient(173deg, rgba(44,44,46,1) 0%, rgba(204,134,157,1) 100%);
+    width: 100%;
+    height: 85px;
+    text-align: center;
+}
+
+#facade-name span {
+    color: white;
+    font-size: xx-large;
+}
+
+#facade-name img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

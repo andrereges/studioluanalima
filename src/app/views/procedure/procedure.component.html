@@ -1,0 +1,66 @@
+<main class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+
+    <app-navbar-goback></app-navbar-goback>
+
+    <h1>Procedimentos</h1>
+
+    <hr class="featurette-divider">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col w-100">
+            <mat-form-field class="w-100">
+                <mat-label>Categoria</mat-label>
+                <mat-select [(ngModel)]="categorySelected">
+                    <mat-option value="">Todos</mat-option>
+                    <mat-option *ngFor="let category of categories" [value]="category.id">
+                        {{category.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="col w-100">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Procedimento</mat-label>
+                <input matInput [(ngModel)]="textSearch" placeholder="Digite o nome do procedimento">
+
+                <mat-icon class="pointer-cursor" matSuffix (click)="clearInput()" *ngIf="textSearch">close</mat-icon>
+                <mat-icon matSuffix *ngIf="!textSearch">search</mat-icon>
+            </mat-form-field>
+        </div>
+
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col"
+            *ngFor="let procedure of procedures | procedureFilter: categorySelected:textSearch; let procedureIndex = index">
+            <div class="card h-100">
+
+                <app-carousel
+                    [carouselData]="{
+                        id: 'procedure_'.concat(procedureIndex.toString()),
+                        images: procedure.images,
+                        width: '100%',
+                        height: '360px',
+                        slideInterval: 3000
+                    }"
+                />
+
+                <div class="card-body">
+                    <div class="card-title theme-color">
+                        {{procedure.name}}
+                    </div>
+
+                    <div class="row">
+                        <button type="button" class="btn theme-btn" [routerLink]="['/procedimento/', procedure.slug]">
+                            Mais Detalhes »
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>

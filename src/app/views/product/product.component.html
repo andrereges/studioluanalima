@@ -1,0 +1,67 @@
+<main class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+
+    <app-navbar-goback></app-navbar-goback>
+
+    <h1>Produtos</h1>
+
+    <hr class="featurette-divider">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col w-100">
+            <mat-form-field class="w-100">
+                <mat-label>Categoria</mat-label>
+                <mat-select [(ngModel)]="categorySelected">
+                    <mat-option value="">Todos</mat-option>
+                    <mat-option *ngFor="let category of categories" [value]="category.id">
+                        {{category.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="col w-100">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Produto</mat-label>
+                <input matInput [(ngModel)]="textSearch" placeholder="Digite o nome do produto">
+
+                <mat-icon class="pointer-cursor" matSuffix (click)="clearInput()" *ngIf="textSearch">close</mat-icon>
+                <mat-icon matSuffix *ngIf="!textSearch">search</mat-icon>
+            </mat-form-field>
+        </div>
+
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col"
+            *ngFor="let product of products | productFilter: categorySelected:textSearch; let productIndex = index">
+            <div class="card h-100">
+
+                <app-carousel
+                    [carouselData]="{
+                        id: 'product_'.concat(productIndex.toString()),
+                        images: product.images,
+                        width: '100%',
+                        height: '360px',
+                        slideInterval: 3000
+                    }"
+                />
+
+                <div class="card-body theme-color">
+
+                    <div class="card-title">
+                        {{product.name}}
+                    </div>
+
+                    <div class="row card-text">
+                        <div class="col">
+                            <strong>Tamanhos: </strong>{{ product.sizes.join(', ') }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>

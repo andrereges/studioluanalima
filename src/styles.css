@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body {
+  background-color: var(--theme-white-color);
+}
+
+a:hover, a:active, a:visited, a:link {
+  text-decoration: none;
+  color: var(--theme-brown-color) !important;
+}
+
+.float-button:hover {
+  transform: scale(1.05);
+}
+
+:root {
+  --theme-white-color: #FFF0F5;
+  --theme-light-purple-color: rgba(238, 204, 241, 0.5);
+  --theme-light-pink-color: rgb(248, 213, 229);
+  --theme-pink-color: #f387d8;
+  --theme-dark-pink-color: rgba(204,134,157,1);
+  --theme-brown-color: #4b2828;
+  --theme-black-color: #000000d0;
+}
+
+.theme-btn {
+  background-color: var(--theme-dark-pink-color);
+  box-shadow: var(--theme-white-color) 0.1em 0.1em 0.2em;
+  transition : box-shadow ease-out 0.6s;
+  color: var(--theme-white-color) !important;
+}
+
+.theme-btn:hover {
+  background-color: var(--theme-light-purple-color);
+  box-shadow: var(--theme-black-color) 0.1em 0.1em 0.2em;
+  transition : box-shadow ease-out 0.6s;
+  color: var(--theme-black-color) !important;
+}
+
+h1, h2, h3, h4, .theme-color {
+  color: var(--theme-brown-color) !important;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes vibrate {
+  0% {
+      margin-left: 0;
+  }
+
+  25% {
+      margin-left: 5px;
+  }
+
+  50% {
+      margin-left: 0;
+  }
+
+  75% {
+      margin-left: -5px;
+  }
+
+  100% {
+      margin-left: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+      scale: .9;
+  }
+
+  70% {
+      scale: 1;
+      box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+  
+  100% {
+      scale: .9;
+      box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
+html, body { 
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

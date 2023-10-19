@@ -1,0 +1,10 @@
+.nav-link {
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px var(--theme-dark-pink-color);
+}
+
+.nav-link:hover {
+    opacity: 0.5;
+    color: var(--theme-dark-pink-color) !important;
+}
+

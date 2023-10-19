@@ -1,0 +1,23 @@
+.invisible {
+    visibility: hidden;
+}
+
+#float-button-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--theme-pink-color);
+    color: #FFF !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    animation: pulse 1.5s infinite;
+}
+
+#float-button-whatsapp:hover {
+    animation: none;
+}

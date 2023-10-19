@@ -1,0 +1,22 @@
+.nav-link {
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px var(--theme-pink-color);
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+}
+
+.navbar-toggler {
+    background-color: var(--theme-white-color) !important;
+}
+
+.nav-link:hover {
+    opacity: 0.5;
+    font-weight: bold;
+    color: var(--theme-pink-color) !important;
+}
+
+.navbar {
+    background-color: transparent;
+}

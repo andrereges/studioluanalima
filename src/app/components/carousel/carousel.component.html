@@ -1,0 +1,35 @@
+<div [id]="carouselData?.id" class="carousel slide" data-bs-ride="carousel" [attr.data-bs-interval]="(carouselData?.slideInterval == undefined) ? 3000 : carouselData?.slideInterval">
+
+  <div class="carousel-indicators" *ngIf="carouselData?.images?.[1]">
+    <button *ngFor="let image of carouselData?.images; let index = index; let isFirst = first"
+      [ngClass]="{active:isFirst}" type="button" [attr.data-bs-target]="'#' + carouselData?.id"
+      [attr.data-bs-slide-to]="index" aria-current="true" [attr.aria-label]="index">
+    </button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item" *ngFor="let image of carouselData?.images; let isFirst = first"
+      [ngClass]="{active:isFirst}">
+      <img src="{{image.url}}" class="d-block w-100" alt="{{image.alt}}"
+        [ngStyle]="{'width': carouselData?.width, 'height': carouselData?.height}">
+    </div>
+  </div>
+
+  <button *ngIf="carouselData?.images?.[1]" class="carousel-control-prev" type="button"
+    [attr.data-bs-target]="'#' + carouselData?.id" data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+
+  </button>
+
+  <button *ngIf="carouselData?.images?.[1]" class="carousel-control-next" type="button"
+    [attr.data-bs-target]="'#' + carouselData?.id" data-bs-slide="next">
+
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+
+  </button>
+
+</div>

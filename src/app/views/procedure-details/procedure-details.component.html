@@ -1,0 +1,60 @@
+<main class="p-3 p-md-5 m-md-3 text-center bg-light">
+
+    <app-navbar-goback></app-navbar-goback>
+
+    <h1>{{procedure?.name}}</h1>
+
+    <hr class="featurette-divider">
+
+    <p>
+        {{procedure?.description}}
+    </p>
+
+    <div class="row align-items-md-stretch p-5">
+        <div class="col-md-6  mb-4">
+            <div class="h-100 p-5 bg-light border rounded-3">
+
+                <h2 class="mt-2 primary" style="color: green;">
+                    <i i-bs name="check-circle-fill" class="bi d-block mx-auto mb-1" width="24" height="24"></i>
+                    Benefícios
+                </h2>
+
+                <p *ngFor="let benefit of procedure?.benefits">
+                    <span>{{benefit}}</span>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="h-100 p-5 bg-light border rounded-3">
+                <h2 class="mt-2" style="color: red;">
+                    <i i-bs name="x-square-fill" class="bi d-block mx-auto mb-1" width="24" height="24"></i>
+                    Restrições
+                </h2>
+
+                <p *ngFor="let restriction of procedure?.restrictions">
+                    <span>{{restriction}}</span>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="col-md-12 bg-light border rounded-3 mt-4">
+
+            <h2 class="mt-2">Galeria</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+
+                <div class="col" *ngFor="let image of procedure?.images">
+                    <div class="card h-100">
+                        <img src="{{image.url}}" alt="{{image.alt}}" class="card-img-top" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</main>

@@ -1,0 +1,10 @@
+img {
+    width: 100%;
+    content: url("/assets/images/site/banner_wide.png");
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        content: url("/assets/images/site/banner_quadrado.png");
+    }
+}

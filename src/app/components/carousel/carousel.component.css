@@ -1,0 +1,21 @@
+#carouselCaptions {
+    padding-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 640px;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        height: 768px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%;
+        height: 460px !important;
+    }
+}
