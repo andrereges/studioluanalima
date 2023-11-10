@@ -7,15 +7,6 @@
   content: "";
 }
 
-#services img {
-  border: 5px solid;
-  border-color: var(--theme-light-purple-color);
-}
-
-#services img:hover {
-  transform: scale(1.03);
-}
-
 section {
   margin-bottom: 10px;
 }
@@ -27,6 +18,10 @@ section {
 .box-customer img {
   width: 140px;
   height: 140px;
+}
+
+.customer-name {
+  font-weight: bold;
 }
 
 #products img {

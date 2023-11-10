@@ -1,4 +1,5 @@
-<div [id]="carouselData?.id" class="carousel slide" data-bs-ride="carousel" [attr.data-bs-interval]="(carouselData?.slideInterval == undefined) ? 3000 : carouselData?.slideInterval">
+<div [id]="carouselData?.id" class="carousel slide" data-bs-ride="carousel"
+  [attr.data-bs-interval]="(carouselData?.slideInterval == undefined) ? 3000 : carouselData?.slideInterval">
 
   <div class="carousel-indicators" *ngIf="carouselData?.images?.[1]">
     <button *ngFor="let image of carouselData?.images; let index = index; let isFirst = first"
@@ -11,7 +12,7 @@
 
     <div class="carousel-item" *ngFor="let image of carouselData?.images; let isFirst = first"
       [ngClass]="{active:isFirst}">
-      <img src="{{image.url}}" class="d-block w-100" alt="{{image.alt}}"
+      <img [src]="image.url" class="d-block w-100" [alt]="image.alt"
         [ngStyle]="{'width': carouselData?.width, 'height': carouselData?.height}">
     </div>
   </div>

@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Product } from '../interfaces/product';
+import { Utils } from '../shared/utils';
 
 @Pipe({ name: 'productFilter' })
 export class ProductFilterPipe implements PipeTransform {
@@ -21,12 +22,13 @@ export class ProductFilterPipe implements PipeTransform {
         return products.filter(
                 product => {                       
                     if (!categorySelected && textSearch)
-                        return product.name.toLowerCase().includes(textSearch.toLowerCase())
+                        return Utils.replaceSpecialChars(product.name.toLowerCase()).includes(Utils.replaceSpecialChars(textSearch.toLowerCase()))
 
                     if (categorySelected && !textSearch)
                         return product.categories.find((category) => category.id == categorySelected)
 
-                    return product.categories.find((category) => category.id == categorySelected) && product.name.toLowerCase().includes(textSearch.toLowerCase())
+                    return product.categories.find((category) => category.id == categorySelected) 
+                        && Utils.replaceSpecialChars(product.name.toLowerCase()).includes(Utils.replaceSpecialChars(textSearch.toLowerCase()))
                 }
             )
     }

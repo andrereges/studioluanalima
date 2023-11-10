@@ -23,7 +23,7 @@ const routes: Routes = [
     component: StudioDetailsComponent
   },
   {
-    path: 'procedimento/:slug',
+    path: 'procedimentos/:slug',
     pathMatch: 'prefix',
     component: ProcedureDetailsComponent
   },

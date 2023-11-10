@@ -17,6 +17,15 @@ export class StudioDetailsComponent {
   ngOnInit(): void {
     this.getStudio();
   }
+
+
+  getDescriptionHtml(): string {    
+    if (this.studio) {
+      return this.studio?.description;
+    }
+
+    return ''
+  }
   
   getStudio(): void {
     const id = 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3410';

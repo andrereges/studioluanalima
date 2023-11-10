@@ -1,20 +1,36 @@
-<main class="p-3 p-md-5 m-md-3 text-center bg-light">
+<main class="p-3 p-md-5 m-md-3 bg-light">
 
     <app-navbar-goback></app-navbar-goback>
 
-    <h1>{{studio?.name}}</h1>
+    <div class="row featurette">
 
-    <hr class="featurette-divider">
+        <h1 class="featurette-heading text-center">{{studio?.name}}</h1>
 
-    <p>
-        {{studio?.description}}
-    </p>
+        <hr class="featurette-divider">
 
-    <div class="row align-items-md-stretch p-5">
+        <div class="col-md-8" [innerHTML]="getDescriptionHtml() | safeHtml"></div>
 
-        <div class="col-md-12 bg-light border rounded-3 mt-4">
+        <div class="col-md-4 justify-content-center">
+            <video 
+                width="100%"
+                height="60%"
+                [muted]="true"
+                loop
+                autoplay
+                controlsList="noplaybackrate nofullscreen nodownload noremoteplayback"
+            >
+                <source src="assets/videos/studios/video-studio.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+    </div>
 
-            <h2 class="mt-2">Galeria</h2>
+    <div class="row">
+
+        <div class="col-md-12 bg-light border rounded-3">
+
+            <h2 class="mt-2 text-center">Galeria</h2>
 
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
 

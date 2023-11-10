@@ -25,6 +25,13 @@ img {
     font-size: xx-large;
 }
 
+@media only screen and (max-width: 600px) {
+    #facade-name span {
+        color: white;
+        font-size: x-large;
+    }
+}
+
 #facade-name img {
     width: 60px;
     height: 60px;

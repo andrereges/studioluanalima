@@ -44,13 +44,7 @@ export class ProcedureComponent {
   }
 
   private alreadyExists(categoryParameter: Category): boolean {
-    let exists = false
-
-    this.categories.forEach(
-      category => exists = category.id == categoryParameter.id
-    )
-
-    return exists;
+    return !!this.categories.find(category => category.id == categoryParameter.id)
   }
 
 }

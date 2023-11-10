@@ -16,21 +16,32 @@ export class DatabaseService implements InMemoryDbService {
         id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3411',
         name: 'Luana Lima',
         description: `
-          CEO e profissional nos procedimentos de cílios, sobrancelhas e cabelo.
+          CEO e profissional nos procedimentos de cílios, sobrancelhas, drenagem linfática, limpeza de pele e cabelo.
         `,
-        image:           {
-          url: 'assets/images/professionals/luana.png',
+        image: {
+          url: 'assets/images/professionals/luana.jpeg',
           alt: 'Foto Profissional'
         },
       },
       {
         id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3412',
-        name: 'Regiane',
+        name: 'Regiane Lora',
         description: `
           Profissional nos procedimentos de unhas.
         `,
-        image:           {
-          url: 'assets/images/professionals/regiane.png',
+        image: {
+          url: 'assets/images/professionals/regiane.jpeg',
+          alt: 'Foto Profissional'
+        },
+      },
+      {
+        id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3413',
+        name: 'Elayne',
+        description: `
+          Profissional nos procedimentos de cílios.
+        `,
+        image: {
+          url: 'assets/images/professionals/elayne.jpeg',
           alt: 'Foto Profissional'
         },
       }
@@ -41,26 +52,66 @@ export class DatabaseService implements InMemoryDbService {
         id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3410',
         name: 'Studio Luana Lima',
         description: `
-          É um studio completo, com inspirações e tendências em Corte, Cor, Luzes, Unhas,
-          Penteados, Cílios e Makes. O Studio contempla Facial, Corporal, Rádio Frequência
-          para Flacidez, Lipocavitação para Gordura Localizada e Celulites. No masculino,
-          cortar o cabelo, fazer a barba e aparar as unhas, não é mais uma obrigação e sim
-          uma experiência, podendo usufruir também de uma deliciosa massagem relaxante.
-          E para os pequenos o corte é acompanhado de alegria e diversão, com playground ao ar livre.
+          <p>
+            Inaugurado em Fevereiro de 2023, nosso estúdio conta com diversos serviços na área da saúde e beleza. Contamos com 2 ambientes de atendimento divididos estrategicamente.
+          </p>
+
+          <h3>  Ambiente 1  </h3>
+          
+          <ul>
+            <li> Manicure e pedicure </li>
+            <li> Procedimentos com maca </li>
+            <li> Cílios </li>
+            <li> Limpeza de pele </li>
+            <li> Design de sobrancelhas </li>
+            <li> Drenagem linfática </li>
+            <li> Espaço instagramável, para tirar fotos </li>
+            <li> Espaço para expositores de itens de vestuário para venda </li>
+            <li> Cantinho do café </li>
+          </ul>
+
+          <br>
+
+          <h3>  Ambiente 2 </h3>
+
+          <ul>
+            <li> Procedimentos capilares, como escova e progressiva </li>
+          </ul>
+            
+          <p>
+            Tudo bem pensado e separado para trazer o máximo de conforto e bem estar no momento dos procedimentos.
+          </p>
+
+          <p>
+            Nosso ambiente é calmo e reservado, não trabalhamos com porta de vidro comercial o que gera conforto e privacidade, 
+            pois nem todos gostam de exposição no momento da realização dos procedimentos, tornando um diferencial para nosso estúdio.
+          </p>
+
+          <p>
+            Pra quem gosta de um ambiente reservado, bem vindos ao lugar ideal!
+          </p>
         `,
         images: [
           {
-            url: 'https://i.pinimg.com/736x/8b/c8/28/8bc8287e545111f60ebef020e491cd86.jpg',
-            alt: 'Imagem studio'
+            url: 'assets/images/studios/studio.jpeg',
+            alt: 'Imagem Studio'
           },
           {
-            url: 'https://static.hbt.triider.com.br/photos/project/big/studio-de-beleza-linhas-retas-2605569.jpg',
-            alt: 'Imagem studio'
+            url: 'assets/images/studios/studio2.jpeg',
+            alt: 'Imagem Studio'
           },
           {
-            url: 'https://i.pinimg.com/originals/08/74/b5/0874b577e7f6eed6e62c5ad498ed077d.jpg',
-            alt: 'Imagem studio'
+            url: 'assets/images/studios/studio3.jpeg',
+            alt: 'Imagem Studio'
           },
+          {
+            url: 'assets/images/studios/studio4.jpeg',
+            alt: 'Imagem Studio'
+          },
+          {
+            url: 'assets/images/studios/studio5.jpeg',
+            alt: 'Imagem Studio'
+          }
         ]
       }
     ]
@@ -84,7 +135,7 @@ export class DatabaseService implements InMemoryDbService {
       },
       {
         id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3494',
-        name: 'Corpo'
+        name: 'Pele'
       }
     ]
 
@@ -98,9 +149,9 @@ export class DatabaseService implements InMemoryDbService {
     const products = [
       {
         id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3458',
-        name: 'Calça Jeans',
-        price: 499.00,
-        sizes: ['G', 'Único'],
+        name: 'T-Shirt Feminina',
+        price: 25.00,
+        sizes: ['Único'],
         categories: [
           {
             id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3459',
@@ -109,20 +160,20 @@ export class DatabaseService implements InMemoryDbService {
         ],
         images: [
           {
-            url: 'https://modab.vtexassets.com/arquivos/ids/550426-800-auto?v=638235512219170000&width=800&height=auto&aspect=true',
-            alt: 'Calça Jeans'
+            url: 'assets/images/products/camiseta_tam_u.jpeg',
+            alt: 'T-Shirt feminina tamanho único'
           },
           {
-            url: 'https://modab.vtexassets.com/arquivos/ids/550427-800-auto?v=638235512230130000&width=800&height=auto&aspect=true',
-            alt: 'Calça Jeans'
+            url: 'assets/images/products/camiseta_tam_u2.jpeg',
+            alt: 'T-Shirt feminina tamanho único'
           }
         ]
       },
       {
         id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3454',
-        name: 'Camiseta da Barbie',
-        price: 25.99,
-        sizes: ['G'],
+        name: 'T-Shirt Plus Size',
+        price: 30.00,
+        sizes: ['Plus Size'],
         categories: [
           {
             id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3459',
@@ -131,22 +182,178 @@ export class DatabaseService implements InMemoryDbService {
         ],
         images: [
           {
-            url: 'https://photos.enjoei.com.br/camiseta-barbie-tam-unico-89040925/800x800/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8xMTQxOTU5OC84ZGNkYjliMzcwZjkwMGM4OWU5ZmM0NjkwOGQ3MzRmMy5qcGc',
-            alt: 'Barbie camiseta'
+            url: 'assets/images/products/camiseta_tam_plus.jpeg',
+            alt: 'T-Shirt plus size'
           },
           {
-            url: 'https://img.lojasrenner.com.br/item/854447834/zoom/12.jpg',
-            alt: 'Imagem Camiseta da Barbie'
+            url: 'assets/images/products/camiseta_tam_plus2.jpeg',
+            alt: 'T-Shirt plus size'
           },
           {
-            url: 'https://22036.cdn.simplo7.net/static/22036/sku/camisetas-de-filme-camiseta-she-is-just-a-barbie-p-1680710882404.png',
-            alt: 'Imagem Camiseta da Barbie 2'
+            url: 'assets/images/products/camiseta_tam_plus3.jpeg',
+            alt: 'T-Shirt plus size'
+          },
+          {
+            url: 'assets/images/products/camiseta_tam_plus4.jpeg',
+            alt: 'T-Shirt plus size'
+          },
+          {
+            url: 'assets/images/products/camiseta_tam_plus5.jpeg',
+            alt: 'T-Shirt plus size'
+          },
+        ]
+      },
+      {
+        id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3458',
+        name: 'Shorts Alfaitaria',
+        price: 35.00,
+        sizes: ['P', 'M', 'G', 'GG'],
+        categories: [
+          {
+            id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3459',
+            name: 'Roupas'
           }
+        ],
+        images: [
+          {
+            url: 'assets/images/products/shorts.jpeg',
+            alt: 'Shorts Alfaitaria'
+          },
+          {
+            url: 'assets/images/products/shorts2.jpeg',
+            alt: 'Shorts Alfaitaria'
+          },
+          {
+            url: 'assets/images/products/shorts3.jpeg',
+            alt: 'Shorts Alfaitaria'
+          },
+          {
+            url: 'assets/images/products/shorts4.jpeg',
+            alt: 'Shorts Alfaitaria'
+          },
+          {
+            url: 'assets/images/products/shorts5.jpeg',
+            alt: 'Shorts Alfaitaria'
+          },
+          {
+            url: 'assets/images/products/shorts6.jpeg',
+            alt: 'Shorts Alfaitaria'
+          },
         ]
       }
     ];
 
     const procedures = [
+      {
+        id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3698',
+        name: 'Extensão de Cílios',
+        description: `
+          Extensão de cílios está em alta no mercado da beleza, trabalhamos com as 
+          técnicas: Fio a Fio, Volume Brasileiro, Volume Egípcio, Volume Luxo e
+          Volume Kim Kardashian. O procedimento é feito no tempo de 2 horas, o processo é 
+          indolor e não interfere no crescimento dos cílios naturais.
+        `,
+        benefits: [
+          'Eleva a autoestima',
+          'Praticidade',
+          'Acordar sempre pronta'
+        ],
+        restrictions: [
+          'Pessoas alérgicas a produtos químicos ou maquiagem',
+          'Distúrbio da tireóide',
+          'Pessoas que tem ou teve glaucoma'
+        ],
+        slug: 'extensao-cilios',
+        images: [
+          {
+            url: 'assets/images/procedures/cilios.jpeg',
+            alt: 'Imagem Extensão de Cílios'
+          },
+          {
+            url: 'assets/images/procedures/cilios2.jpeg',
+            alt: 'Imagem Extensão de Cílios'
+          }
+        ],
+        categories: [
+          procedureCategories[0]
+        ]
+      },
+      {
+        id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c5789',
+        name: 'Design de Sobrancelhas',
+        description: `
+          Objetivo valorizar o rosto e expressão do olhar. Aqui no nosso 
+          espaço trabalhamos com design simples personalizado e design com henna.
+        `,
+        benefits: [
+          'Correção de falhas',
+          'Maior expressividade no olhar'
+        ],
+        restrictions: [
+          'Pessoas alérgicas à composição da henna'
+        ],
+        slug: 'design-sobracelhas',
+        images: [
+          {
+            url: 'assets/images/procedures/henna.jpeg',
+            alt: 'Imagem Design Henna'
+          },
+          {
+            url: 'assets/images/procedures/henna2.jpeg',
+            alt: 'Imagem Design Henna'
+          },
+          {
+            url: 'assets/images/procedures/henna3.jpeg',
+            alt: 'Imagem Design Henna'
+          },
+          {
+            url: 'assets/images/procedures/henna4.jpeg',
+            alt: 'Imagem Design Henna'
+          },
+        ],
+        categories: [
+          procedureCategories[1]
+        ]
+      },
+      {
+        id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c1382',
+        name: 'Manicure e Pedicure',
+        description: `
+          Trabalha a higiene e estética das unhas conta com cutilagem, 
+          desencrave de unhas, esfoliação, lixamento e pintura das unhas.
+        `,
+        benefits: [
+          'Unhas higienizadas',
+          'Eleva a autoestima',
+          'Bem-estar'
+        ],
+        restrictions: [
+          'Diabetes não tratada',
+          'Infecções na área dos pés ou das mãos'
+        ],
+        slug: 'manicure-pedicure',
+        images: [
+          {
+            url: 'assets/images/procedures/manicure_pedicure.jpeg',
+            alt: 'Imagem Manicure e Pedicure'
+          },
+          {
+            url: 'assets/images/procedures/manicure_pedicure2.jpeg',
+            alt: 'Imagem Manicure e Pedicure'
+          },
+          {
+            url: 'assets/images/procedures/manicure_pedicure3.jpeg',
+            alt: 'Imagem Manicure e Pedicure'
+          },
+          {
+            url: 'assets/images/procedures/manicure_pedicure4.jpeg',
+            alt: 'Imagem Manicure e Pedicure'
+          },
+        ],
+        categories: [
+          procedureCategories[3]
+        ]
+      },
       {
         id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3472',
         name: 'Microblanding Fio a Fio',
@@ -165,19 +372,24 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'microblanding-fio-a-fio',
         images: [
           {
-            url: 'https://olook.com.br/wp-content/uploads/2019/05/O-Look-microblading-02-7.jpg',
+            url: 'assets/images/procedures/microblanding.jpeg',
             alt: 'Imagem Microblanding Fio a Fio'
           },
           {
-            url: 'https://dnadabeleza.com.br/wp-content/uploads/2019/01/microblanding1.jpg',
+            url: 'assets/images/procedures/microblanding2.jpeg',
             alt: 'Imagem Microblanding Fio a Fio'
-          }
+          },
+          {
+            url: 'assets/images/procedures/microblanding3.jpeg',
+            alt: 'Imagem Microblanding Fio a Fio'
+          },
+          {
+            url: 'assets/images/procedures/microblading4.jpeg',
+            alt: 'Imagem Microblanding Fio a Fio'
+          },
         ],
         categories: [
-          {
-            id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3491',
-            name: 'Sobrancelhas'
-          }
+          procedureCategories[1]
         ]
       },
       {
@@ -208,19 +420,20 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'drenagem-linfatica',
         images: [
           {
-            url: 'https://www.adcosprofissional.com.br/blog/app/uploads/2021/03/shutterstock_453314983.jpg',
-            alt: 'Imagem drenagem'
+            url: 'assets/images/procedures/drenagem_linfatica.jpeg',
+            alt: 'Imagem Drenagem Linfática'
           },
           {
-            url: 'https://danielgehlen.com.br/wp-content/uploads/2022/03/drenagem-2.jpg',
-            alt: 'Imagem drenagem 2'
+            url: 'assets/images/procedures/drenagem_linfatica2.jpeg',
+            alt: 'Imagem Drenagem Linfática'
+          },
+          {
+            url: 'assets/images/procedures/drenagem_linfatica3.jpg',
+            alt: 'Imagem Drenagem Linfática'
           }
         ],
         categories: [
-          {
-            id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3494',
-            name: 'Corpo'
-          }
+          procedureCategories[4]
         ]
       },
       {
@@ -241,32 +454,148 @@ export class DatabaseService implements InMemoryDbService {
         ],
         restrictions: [
           'Pele muito sensível',
-          'Pele com muita descamaçao',
+          'Pele com muita descamação',
           'Alergias na pele',
           'Gestantes e lactantes'
         ],
         slug: 'limpeza-pele',
         images: [
           {
-            url: 'https://dratelmagiordani.com.br/wp-content/uploads/2020/02/3-Limpeza-de-Pele.jpg',
+            url: 'assets/images/procedures/limpeza_pele.jpeg',
             alt: 'Limpeza de pele imagem'
           },
           {
-            url: 'https://st2.depositphotos.com/1441511/9308/i/450/depositphotos_93089976-stock-photo-skin-care-ultrasound-cavitation-facial.jpg',
+            url: 'assets/images/procedures/limpeza_pele2.jpeg',
             alt: 'Limpeza de pele imagem'
           },
           {
-            url: 'https://neststudio.com.br/wp-content/uploads/2023/02/Limpeza-de-Pele-960x760-1.jpg',
+            url: 'assets/images/procedures/limpeza_pele3.jpeg',
             alt: 'Limpeza de pele imagem'
           }
         ],
         categories: [
-          {
-            id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3494',
-            name: 'Corpo'
-          }
+          procedureCategories[4]
         ]
-      }
+      },
+      {
+        id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c8319',
+        name: 'Hydra Gloss Lips',
+        description: `
+          Hydra Gloss Lips é uma técnica de super hidratação que propicia o 
+          rejuvenescimento, definição e hidratação dos lábios.
+        `,
+        benefits: [
+          'Hidratação',
+          'Rejuvenescimento labial',
+          'Aspecto de saudável'
+        ],
+        restrictions: [
+          'Gestantes e lactantes',
+          'Herpes labial',
+          'Pessoas que fazem uso de Roacutan'
+        ],
+        slug: 'hydra-gloss-lips',
+        images: [
+          {
+            url: 'assets/images/procedures/hydra_gloss_lips.jpeg',
+            alt: 'Imagem Hydra Gloss Lips'
+          },
+          {
+            url: 'assets/images/procedures/hydra_gloss_lips2.jpeg',
+            alt: 'Imagem Hydra Gloss Lips'
+          },
+          {
+            url: 'assets/images/procedures/hydra_gloss_lips3.jpeg',
+            alt: 'Imagem Hydra Gloss Lips'
+          },
+        ],
+        categories: [
+          procedureCategories[4]
+        ]
+      },
+      {
+        id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c5462',
+        name: 'Progressiva Sem Formol',
+        description: `
+          A grande vantagem é que ela não causa qualquer efeito colateral, seja queimação, 
+          descamação do couro cabeludo ou ardência dos olhos. Pode ser utilizada em todos os 
+          tipos de cabelo compatível com todas as químicas.
+        `,
+        benefits: [
+          'Brilho intenso',
+          'Maciez',
+          'Liso intenso',
+          'Redução de frizz',
+          'Menos agressiva'
+        ],
+        restrictions: [
+          'Uso de henê',
+          'Crianças menos de 10 anos',
+          'Couro cabeludo hipersensível'
+        ],
+        slug: 'progressiva-sem-formol',
+        images: [
+          {
+            url: 'assets/images/procedures/progressiva_sem_formol.jpeg',
+            alt: 'Imagem Progressiva Sem Formol'
+          },
+          {
+            url: 'assets/images/procedures/progressiva_sem_formol2.jpeg',
+            alt: 'Imagem Progressiva Sem Formol'
+          },
+          {
+            url: 'assets/images/procedures/progressiva_sem_formol3.jpeg',
+            alt: 'Imagem Progressiva Sem Formol'
+          },
+          {
+            url: 'assets/images/procedures/progressiva_sem_formol4.jpeg',
+            alt: 'Imagem Progressiva Sem Formol'
+          },
+          {
+            url: 'assets/images/procedures/progressiva_sem_formol5.jpeg',
+            alt: 'Imagem Progressiva Sem Formol'
+          }
+        ],
+        categories: [
+          procedureCategories[2]
+        ]
+      },
+      {
+        id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c7351',
+        name: 'Escova e Tratamentos',
+        description: `
+          Contamos com uma linha de produtos para a necessidade de cada cabelo, 
+          seja hidratação, reconstrução, nutrição ou cauterização. Todas finalizadas 
+          com escova.
+        `,
+        benefits: [
+          'Cabelos tratados',
+          'Brilho intenso',
+          'Praticidade para o dia a dia'
+        ],
+        restrictions: [
+          'Hipersensibilidade',
+          'Alergia a composição dos produtos'
+        ],
+        slug: 'escova',
+        images: [
+          {
+            url: 'assets/images/procedures/escova.jpeg',
+            alt: 'Imagem Escova'
+          },
+          {
+            url: 'assets/images/procedures/escova2.jpeg',
+            alt: 'Imagem Escova'
+          },
+          {
+            url: 'assets/images/procedures/escova3.jpeg',
+            alt: 'Imagem Escova'
+          },
+        ],
+        categories: [
+          procedureCategories[2]
+        ]
+      },
     ];
 
     const home = [
@@ -290,32 +619,53 @@ export class DatabaseService implements InMemoryDbService {
             {
               url: 'assets/images/carousel/c3.jpeg',
               alt: 'Imagem Carrossel'
-            },
-            {
-              url: 'assets/images/carousel/c4.jpeg',
-              alt: 'Imagem Carrossel'
             }
           ]
         },
         recomendations: [
           {
-            customer: 'Yanka',
+            customer: 'Ana Paula',
             image: {
-              url: 'assets/images/customers/yanka.png',
+              url: 'assets/images/customers/ana_paula.jpeg',
               alt: 'Foto cliente'
             },
             message: `
-              Os meus dias são muito corridos. Tenho uma marca de sapatos e também sou sócia 
-              de uma empresa. Então, só consigo estar com as unhas sempre feitas com a ajuda da 
-              Singu. É super legal poder contar com ótimas profissionais que atendem em horários 
-              tão flexíveis e ainda em casa ou no trabalho!
+              Espaço muito bonito, sempre faço meu cabelo com a Luana e 
+              amo o resultado, admiro seu atendimento por ser profissional e diferenciado, 
+              estou super satisfeita.
+            `
+          },
+          {
+            customer: 'Laís Ateliê Aya',
+            image: {
+              url: 'assets/images/customers/lais_atelie_aya.jpeg',
+              alt: 'Foto cliente'
+            },
+            message: `
+              Sou cliente do Studio Luana Lima e não poderia dar nota menor que 1000, 
+              o atendimento da Luana é diferenciado, super educada, profissional e agradável, 
+              o ambiente é muito aconchegante e lindo, somos super bem recebidas, é 
+              organizado e pontual, a qualidade dos procedimentos é inquestionável 
+              sempre saio muito melhor do que entrei, mais bonita e com a alto estima 
+              renovada, me cuido mais e amo ser cuidada pela Luana!
+            `
+          },
+          {
+            customer: 'Laís Sousa',
+            image: {
+              url: 'assets/images/customers/lais_sousa.jpeg',
+              alt: 'Foto cliente'
+            },
+            message: `
+              Que espaço lindo, aconchegante, seu trabalho é maravilhoso, 
+              e além de tudo você é sempre muito atenciosa! Recomendo muito!
             `
           }
         ]
       }
     ]
 
-    return { 
+    return {
       studios,
       procedures,
       products,

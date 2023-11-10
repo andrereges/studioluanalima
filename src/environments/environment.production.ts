@@ -1,7 +1,7 @@
 import { ContactType } from "src/app/enums/contactType";
 
 export const environment = {
-    production: true,
+    production: false,
     contacts: [
         {
             id: 'c32d8b45-92fe-44f6-8b61-42c2107dfe01',
@@ -12,7 +12,7 @@ export const environment = {
                 alt: 'Icon whatsapp'
             },
             get redirect_to() {
-                return 'https://wa.me/55' + this.value.replace(/\D/g,'') + '?text=Ol&aacute;%20Luana,%20tenho%20interesse%20em%20conhecer%20seu%20trabalho!'
+                return 'https://wa.me/55' + this.value.replace(/\D/g,'') + '?text=Olá%20Studio%20Luana%20Lima,%20gostaria%20de%20saber%20mais%20sobre%20procedimentos!'
                 
             },
             value: '(11) 94620-4017'
@@ -29,7 +29,7 @@ export const environment = {
                 return 'https://www.instagram.com/' + this.value.replace('@', '') + '/'
                 
             },
-            value: '@luanaliara_lashdesign'
+            value: '@studioluanalimaoficial'
         },
         {
             id: 'c32d8b45-92fe-44f6-8b61-42c2107dfe03',
@@ -43,7 +43,7 @@ export const environment = {
                 return 'mailto:' + this.value
                 
             },
-            value: 'studioluanalima@gmail.com'
+            value: 'studioluanalimaoficial@gmail.com'
         }
     ]
 };

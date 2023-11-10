@@ -43,6 +43,7 @@ import { ProductImplService } from './services/impl/productImpl.service';
 import { ProductService } from './services/product.service';
 import { DatabaseService } from './services/database.service';
 import { ProductFilterPipe } from './pipes/product-filter.pipe';
+import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
 import { ProcedureComponent } from './views/procedure/procedure.component';
 import { ProcedureFilterPipe } from './pipes/procedure-filter.pipe';
 import { StudioService } from './services/studio.service';
@@ -75,6 +76,7 @@ registerLocaleData(ptBr);
     AppComponent,
     ProductFilterPipe,
     ProcedureFilterPipe,
+    SafeHtmlPipe,
     FooterComponent,
     HeaderComponent,
     NavbarComponent,

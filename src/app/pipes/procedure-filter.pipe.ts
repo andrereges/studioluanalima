@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Procedure } from '../interfaces/procedure';
+import { Utils } from '../shared/utils';
 
 @Pipe({ name: 'procedureFilter' })
 export class ProcedureFilterPipe implements PipeTransform {
@@ -13,20 +14,22 @@ export class ProcedureFilterPipe implements PipeTransform {
      */
     transform(procedures: Procedure[], categorySelected: string, textSearch: string): Procedure[] {
         if (!procedures)
-            return [];
+            return []
 
         if (!categorySelected && !textSearch)
-            return procedures;
+            return procedures
 
         return procedures.filter(
                 procedure => {                       
                     if (!categorySelected && textSearch)
-                        return procedure.name.toLowerCase().includes(textSearch.toLowerCase())
+                        return Utils.replaceSpecialChars(procedure.name.toLowerCase()).includes(Utils.replaceSpecialChars(textSearch.toLowerCase()))
 
                     if (categorySelected && !textSearch)
                         return procedure.categories.find((category) => category.id == categorySelected)
 
-                    return procedure.categories.find((category) => category.id == categorySelected) && procedure.name.toLowerCase().includes(textSearch.toLowerCase())
+                    return procedure.categories.find(
+                        (category) => category.id == categorySelected)
+                        && Utils.replaceSpecialChars(procedure.name.toLowerCase()).includes(Utils.replaceSpecialChars(textSearch.toLowerCase()))
                 }
             )
     }
