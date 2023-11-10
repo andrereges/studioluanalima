@@ -6,7 +6,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="false">
         <div class="col w-100">
             <mat-form-field class="w-100">
                 <mat-label>Categoria</mat-label>
@@ -48,15 +48,19 @@
                 />
 
                 <div class="card-body">
-                    <div class="card-title theme-color">
-                        {{procedure.name}}
-                    </div>
 
                     <div class="row">
-                        <button type="button" class="btn theme-btn" [routerLink]="['/procedimentos/', procedure.slug]">
-                            Mais Detalhes »
-                        </button>
+                        <div class="col card-title theme-color text-center">
+                            {{procedure.name}}
+                        </div>
+
+                        <div class="col-3 text-end">
+                            <button type="button" class="btn btn-sm theme-btn" [routerLink]="['/procedimentos/', procedure.slug]">
+                                <i-bs name="eye-fill" width="32"></i-bs>
+                            </button>
+                        </div>
                     </div>
+                    
                 </div>
 
             </div>

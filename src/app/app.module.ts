@@ -7,13 +7,6 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
-import {
-  NgxBootstrapIconsModule,
-  arrowUpCircleFill, bookmarksFill, postcardFill,
-  geoAltFill, houseDoorFill, personLinesFill,
-  buildingFill, telephoneFill, whatsapp, arrowLeftSquareFill, checkCircleFill, xSquareFill
-} from 'ngx-bootstrap-icons';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -54,19 +47,23 @@ import { HomeService } from './services/home.service';
 import { HomeImplService } from './services/impl/homeImpl.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
+import {
+  eyeFill,
+  NgxBootstrapIconsModule,
+  arrowUpCircleFill,
+  whatsapp,
+  arrowLeftSquareFill,
+  checkCircleFill,
+  xSquareFill
+} from 'ngx-bootstrap-icons';
+
 const icons = {
-  houseDoorFill,
-  postcardFill,
-  buildingFill,
-  personLinesFill,
-  bookmarksFill,
-  geoAltFill,
-  telephoneFill,
   arrowUpCircleFill,
   whatsapp,
   arrowLeftSquareFill,
   xSquareFill,
-  checkCircleFill
+  checkCircleFill,
+  eyeFill
 };
 
 registerLocaleData(ptBr);
