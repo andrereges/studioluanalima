@@ -53,14 +53,14 @@
                         <div class="col card-title theme-color text-center">
                             {{procedure.name}}
                         </div>
-
-                        <div class="col-3 text-end">
-                            <button type="button" class="btn btn-sm theme-btn" [routerLink]="['/procedimentos/', procedure.slug]">
-                                <i-bs name="eye-fill" width="32"></i-bs>
-                            </button>
-                        </div>
                     </div>
                     
+                    <div class="row">
+                        <button type="button" class="btn theme-btn" [routerLink]="['/procedimentos/', procedure.slug]">
+                            <div class="slide">Mais Detalhes »</div>
+                        </button>
+                    </div>
+
                 </div>
 
             </div>

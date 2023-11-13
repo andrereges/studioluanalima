@@ -13,6 +13,7 @@
     <div class="carousel-item" *ngFor="let image of carouselData?.images; let isFirst = first"
       [ngClass]="{active:isFirst}">
       <img [src]="image.url" class="d-block w-100" [alt]="image.alt"
+      loop="infinite"
         [ngStyle]="{'width': carouselData?.width, 'height': carouselData?.height}">
     </div>
   </div>

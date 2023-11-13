@@ -53,19 +53,18 @@ export class DatabaseService implements InMemoryDbService {
         name: 'Studio Luana Lima',
         description: `
           <p>
-            Inaugurado em Fevereiro de 2023, nosso estúdio conta com diversos serviços na área da saúde e beleza. Contamos com 2 ambientes de atendimento divididos estrategicamente.
+            Inaugurado em Fevereiro de 2023, nosso estúdio conta com diversos serviços na área da beleza. Contamos com 2 ambientes de atendimento divididos estrategicamente.
           </p>
 
           <h3>  Ambiente 1  </h3>
           
           <ul>
             <li> Manicure e pedicure </li>
-            <li> Procedimentos com maca </li>
             <li> Cílios </li>
             <li> Limpeza de pele </li>
             <li> Design de sobrancelhas </li>
             <li> Drenagem linfática </li>
-            <li> Espaço instagramável, para tirar fotos </li>
+            <li> Espaço instagramável para fotos e vídeos </li>
             <li> Espaço para expositores de itens de vestuário para venda </li>
             <li> Cantinho do café </li>
           </ul>
@@ -282,7 +281,7 @@ export class DatabaseService implements InMemoryDbService {
         id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c5789',
         name: 'Design de Sobrancelhas',
         description: `
-          Objetivo valorizar o rosto e expressão do olhar. Aqui no nosso 
+          Objetivo valorizar o rosto e expressão no olhar. Aqui no nosso 
           espaço trabalhamos com design simples personalizado e design com henna.
         `,
         benefits: [
