@@ -36,7 +36,7 @@ export class DatabaseService implements InMemoryDbService {
       },
       {
         id: 'f8c3de3d-1fea-4d7c-a8b0-29f63c4c3413',
-        name: 'Elayne',
+        name: 'Elayne Cristina',
         description: `
           Profissional nos procedimentos de cílios.
         `,
