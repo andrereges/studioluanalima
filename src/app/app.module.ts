@@ -48,7 +48,6 @@ import { HomeImplService } from './services/impl/homeImpl.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 import {
-  eyeFill,
   NgxBootstrapIconsModule,
   arrowUpCircleFill,
   whatsapp,
@@ -62,8 +61,7 @@ const icons = {
   whatsapp,
   arrowLeftSquareFill,
   xSquareFill,
-  checkCircleFill,
-  eyeFill
+  checkCircleFill
 };
 
 registerLocaleData(ptBr);
