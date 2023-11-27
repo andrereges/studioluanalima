@@ -1,0 +1,6 @@
+user-agent: *
+allow: /
+allow: /procedimentos
+allow: /produtos
+disallow: /404
+sitemap: https://studioluanalima.com.br/sitemap.xml

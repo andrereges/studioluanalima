@@ -1,8 +1,8 @@
 {
   "name": "Studio Luana Lima",
   "short_name": "Studio Luana Lima",
-  "theme_color": "rgba(238, 204, 241, 0.5)",
-  "background_color": "#FFF0F5",
+  "theme_color": "#cc869d",
+  "background_color": "#f8d5e5",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
