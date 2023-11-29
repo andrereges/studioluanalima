@@ -19,7 +19,7 @@ export class DatabaseService implements InMemoryDbService {
           CEO e profissional nos procedimentos de cílios, sobrancelhas, drenagem linfática, limpeza de pele e cabelo.
         `,
         image: {
-          url: 'assets/images/professionals/luana.jpeg',
+          url: 'assets/images/professionals/studio-luana-lima-luana-lima.jpeg',
           alt: 'Foto Profissional'
         },
       },
@@ -30,7 +30,7 @@ export class DatabaseService implements InMemoryDbService {
           Profissional nos procedimentos de unhas.
         `,
         image: {
-          url: 'assets/images/professionals/regiane.jpeg',
+          url: 'assets/images/professionals/studio-luana-lima-regiane-lora.jpeg',
           alt: 'Foto Profissional'
         },
       },
@@ -41,7 +41,7 @@ export class DatabaseService implements InMemoryDbService {
           Profissional nos procedimentos de cílios.
         `,
         image: {
-          url: 'assets/images/professionals/elayne.jpeg',
+          url: 'assets/images/professionals/studio-luana-lima-elayne-cristina.jpeg',
           alt: 'Foto Profissional'
         },
       }
@@ -92,23 +92,23 @@ export class DatabaseService implements InMemoryDbService {
         `,
         images: [
           {
-            url: 'assets/images/studios/studio.jpeg',
+            url: 'assets/images/studios/studio-luana-lima-studio.jpeg',
             alt: 'Imagem Studio'
           },
           {
-            url: 'assets/images/studios/studio2.jpeg',
+            url: 'assets/images/studios/studio-luana-lima-studio-2.jpeg',
             alt: 'Imagem Studio'
           },
           {
-            url: 'assets/images/studios/studio3.jpeg',
+            url: 'assets/images/studios/studio-luana-lima-studio-3.jpeg',
             alt: 'Imagem Studio'
           },
           {
-            url: 'assets/images/studios/studio4.jpeg',
+            url: 'assets/images/studios/studio-luana-lima-studio-4.jpeg',
             alt: 'Imagem Studio'
           },
           {
-            url: 'assets/images/studios/studio5.jpeg',
+            url: 'assets/images/studios/studio-luana-lima-studio-5.jpeg',
             alt: 'Imagem Studio'
           }
         ]
@@ -159,11 +159,11 @@ export class DatabaseService implements InMemoryDbService {
         ],
         images: [
           {
-            url: 'assets/images/products/camiseta_tam_u.jpeg',
+            url: 'assets/images/products/studio-luana-lima-camiseta-tam-u.jpeg',
             alt: 'T-Shirt feminina tamanho único'
           },
           {
-            url: 'assets/images/products/camiseta_tam_u2.jpeg',
+            url: 'assets/images/products/studio-luana-lima-camiseta-tam-u-2.jpeg',
             alt: 'T-Shirt feminina tamanho único'
           }
         ]
@@ -181,23 +181,23 @@ export class DatabaseService implements InMemoryDbService {
         ],
         images: [
           {
-            url: 'assets/images/products/camiseta_tam_plus.jpeg',
+            url: 'assets/images/products/studio-luana-lima-camiseta-tam-plus.jpeg',
             alt: 'T-Shirt plus size'
           },
           {
-            url: 'assets/images/products/camiseta_tam_plus2.jpeg',
+            url: 'assets/images/products/studio-luana-lima-camiseta-tam-plus-2.jpeg',
             alt: 'T-Shirt plus size'
           },
           {
-            url: 'assets/images/products/camiseta_tam_plus3.jpeg',
+            url: 'assets/images/products/studio-luana-lima-camiseta-tam-plus-3.jpeg',
             alt: 'T-Shirt plus size'
           },
           {
-            url: 'assets/images/products/camiseta_tam_plus4.jpeg',
+            url: 'assets/images/products/studio-luana-lima-camiseta-tam-plus-4.jpeg',
             alt: 'T-Shirt plus size'
           },
           {
-            url: 'assets/images/products/camiseta_tam_plus5.jpeg',
+            url: 'assets/images/products/studio-luana-lima-camiseta-tam-plus-5.jpeg',
             alt: 'T-Shirt plus size'
           },
         ]
@@ -215,27 +215,27 @@ export class DatabaseService implements InMemoryDbService {
         ],
         images: [
           {
-            url: 'assets/images/products/shorts.jpeg',
+            url: 'assets/images/products/studio-luana-lima-shorts.jpeg',
             alt: 'Shorts Alfaitaria'
           },
           {
-            url: 'assets/images/products/shorts2.jpeg',
+            url: 'assets/images/products/studio-luana-lima-shorts-2.jpeg',
             alt: 'Shorts Alfaitaria'
           },
           {
-            url: 'assets/images/products/shorts3.jpeg',
+            url: 'assets/images/products/studio-luana-lima-shorts-3.jpeg',
             alt: 'Shorts Alfaitaria'
           },
           {
-            url: 'assets/images/products/shorts4.jpeg',
+            url: 'assets/images/products/studio-luana-lima-shorts-4.jpeg',
             alt: 'Shorts Alfaitaria'
           },
           {
-            url: 'assets/images/products/shorts5.jpeg',
+            url: 'assets/images/products/studio-luana-lima-shorts-5.jpeg',
             alt: 'Shorts Alfaitaria'
           },
           {
-            url: 'assets/images/products/shorts6.jpeg',
+            url: 'assets/images/products/studio-luana-lima-shorts-6.jpeg',
             alt: 'Shorts Alfaitaria'
           },
         ]
@@ -265,11 +265,11 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'extensao-cilios',
         images: [
           {
-            url: 'assets/images/procedures/cilios.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-cilios.jpeg',
             alt: 'Imagem Extensão de Cílios'
           },
           {
-            url: 'assets/images/procedures/cilios2.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-cilios-2.jpeg',
             alt: 'Imagem Extensão de Cílios'
           }
         ],
@@ -294,19 +294,19 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'design-sobracelhas',
         images: [
           {
-            url: 'assets/images/procedures/henna.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-henna.jpeg',
             alt: 'Imagem Design Henna'
           },
           {
-            url: 'assets/images/procedures/henna2.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-henna-2.jpeg',
             alt: 'Imagem Design Henna'
           },
           {
-            url: 'assets/images/procedures/henna3.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-henna-3.jpeg',
             alt: 'Imagem Design Henna'
           },
           {
-            url: 'assets/images/procedures/henna4.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-henna-4.jpeg',
             alt: 'Imagem Design Henna'
           },
         ],
@@ -333,19 +333,19 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'manicure-pedicure',
         images: [
           {
-            url: 'assets/images/procedures/manicure_pedicure.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-manicure-pedicure.jpeg',
             alt: 'Imagem Manicure e Pedicure'
           },
           {
-            url: 'assets/images/procedures/manicure_pedicure2.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-manicure-pedicure-2.jpeg',
             alt: 'Imagem Manicure e Pedicure'
           },
           {
-            url: 'assets/images/procedures/manicure_pedicure3.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-manicure-pedicure-3.jpeg',
             alt: 'Imagem Manicure e Pedicure'
           },
           {
-            url: 'assets/images/procedures/manicure_pedicure4.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-manicure-pedicure-4.jpeg',
             alt: 'Imagem Manicure e Pedicure'
           },
         ],
@@ -371,19 +371,19 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'microblanding-fio-a-fio',
         images: [
           {
-            url: 'assets/images/procedures/microblanding.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-microblanding.jpeg',
             alt: 'Imagem Microblanding Fio a Fio'
           },
           {
-            url: 'assets/images/procedures/microblanding2.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-microblanding-2.jpeg',
             alt: 'Imagem Microblanding Fio a Fio'
           },
           {
-            url: 'assets/images/procedures/microblanding3.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-microblanding-3.jpeg',
             alt: 'Imagem Microblanding Fio a Fio'
           },
           {
-            url: 'assets/images/procedures/microblading4.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-microblading-4.jpeg',
             alt: 'Imagem Microblanding Fio a Fio'
           },
         ],
@@ -419,15 +419,15 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'drenagem-linfatica',
         images: [
           {
-            url: 'assets/images/procedures/drenagem_linfatica.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-drenagem-linfatica.jpeg',
             alt: 'Imagem Drenagem Linfática'
           },
           {
-            url: 'assets/images/procedures/drenagem_linfatica2.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-drenagem-linfatica-2.jpeg',
             alt: 'Imagem Drenagem Linfática'
           },
           {
-            url: 'assets/images/procedures/drenagem_linfatica3.jpg',
+            url: 'assets/images/procedures/studio-luana-lima-drenagem-linfatica-3.jpg',
             alt: 'Imagem Drenagem Linfática'
           }
         ],
@@ -460,15 +460,15 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'limpeza-pele',
         images: [
           {
-            url: 'assets/images/procedures/limpeza_pele.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-limpeza-pele.jpeg',
             alt: 'Limpeza de pele imagem'
           },
           {
-            url: 'assets/images/procedures/limpeza_pele2.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-limpeza-pele-2.jpeg',
             alt: 'Limpeza de pele imagem'
           },
           {
-            url: 'assets/images/procedures/limpeza_pele3.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-limpeza-pele-3.jpeg',
             alt: 'Limpeza de pele imagem'
           }
         ],
@@ -496,15 +496,15 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'hydra-gloss-lips',
         images: [
           {
-            url: 'assets/images/procedures/hydra_gloss_lips.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-hydra-gloss-lips.jpeg',
             alt: 'Imagem Hydra Gloss Lips'
           },
           {
-            url: 'assets/images/procedures/hydra_gloss_lips2.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-hydra-gloss-lips-2.jpeg',
             alt: 'Imagem Hydra Gloss Lips'
           },
           {
-            url: 'assets/images/procedures/hydra_gloss_lips3.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-hydra-gloss-lips-3.jpeg',
             alt: 'Imagem Hydra Gloss Lips'
           },
         ],
@@ -535,23 +535,23 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'progressiva-sem-formol',
         images: [
           {
-            url: 'assets/images/procedures/progressiva_sem_formol.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-progressiva-sem-formol.jpeg',
             alt: 'Imagem Progressiva Sem Formol'
           },
           {
-            url: 'assets/images/procedures/progressiva_sem_formol2.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-progressiva-sem-formol-2.jpeg',
             alt: 'Imagem Progressiva Sem Formol'
           },
           {
-            url: 'assets/images/procedures/progressiva_sem_formol3.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-progressiva-sem-formol-3.jpeg',
             alt: 'Imagem Progressiva Sem Formol'
           },
           {
-            url: 'assets/images/procedures/progressiva_sem_formol4.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-progressiva-sem-formol-4.jpeg',
             alt: 'Imagem Progressiva Sem Formol'
           },
           {
-            url: 'assets/images/procedures/progressiva_sem_formol5.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-progressiva-sem-formol-5.jpeg',
             alt: 'Imagem Progressiva Sem Formol'
           }
         ],
@@ -579,15 +579,15 @@ export class DatabaseService implements InMemoryDbService {
         slug: 'escova',
         images: [
           {
-            url: 'assets/images/procedures/escova.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-escova.jpeg',
             alt: 'Imagem Escova'
           },
           {
-            url: 'assets/images/procedures/escova2.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-escova-2.jpeg',
             alt: 'Imagem Escova'
           },
           {
-            url: 'assets/images/procedures/escova3.jpeg',
+            url: 'assets/images/procedures/studio-luana-lima-escova-3.jpeg',
             alt: 'Imagem Escova'
           },
         ],
@@ -608,15 +608,15 @@ export class DatabaseService implements InMemoryDbService {
           id: '0',
           images: [
             {
-              url: 'assets/images/carousel/c1.jpeg',
+              url: 'assets/images/carousel/studio-luana-lima-c1.jpeg',
               alt: 'Imagem Carrossel'
             },
             {
-              url: 'assets/images/carousel/c2.jpeg',
+              url: 'assets/images/carousel/studio-luana-lima-c2.jpeg',
               alt: 'Imagem Carrossel'
             },
             {
-              url: 'assets/images/carousel/c3.jpeg',
+              url: 'assets/images/carousel/studio-luana-lima-c3.jpeg',
               alt: 'Imagem Carrossel'
             }
           ]
@@ -625,7 +625,7 @@ export class DatabaseService implements InMemoryDbService {
           {
             customer: 'Ana Paula',
             image: {
-              url: 'assets/images/customers/ana_paula.jpeg',
+              url: 'assets/images/customers/studio-luana-lima-ana-paula.jpeg',
               alt: 'Foto cliente'
             },
             message: `
@@ -637,7 +637,7 @@ export class DatabaseService implements InMemoryDbService {
           {
             customer: 'Laís Ateliê Aya',
             image: {
-              url: 'assets/images/customers/lais_atelie_aya.jpeg',
+              url: 'assets/images/customers/studio-luana-lima-lais-atelie-aya.jpeg',
               alt: 'Foto cliente'
             },
             message: `
@@ -652,7 +652,7 @@ export class DatabaseService implements InMemoryDbService {
           {
             customer: 'Laís Sousa',
             image: {
-              url: 'assets/images/customers/lais_sousa.jpeg',
+              url: 'assets/images/customers/studio-luana-lima-lais-sousa.jpeg',
               alt: 'Foto cliente'
             },
             message: `

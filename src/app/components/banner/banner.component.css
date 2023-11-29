@@ -1,10 +1,10 @@
 img {
     width: 100%;
-    content: url("/assets/images/site/banner_wide.png");
+    content: url("/assets/images/site/studio-luana-lima-banner-wide.png");
 }
 
 @media only screen and (max-width: 600px) {
     img {
-        content: url("/assets/images/site/banner_quadrado.png");
+        content: url("/assets/images/site/studio-luana-lima-banner-quadrado.png");
     }
 }
